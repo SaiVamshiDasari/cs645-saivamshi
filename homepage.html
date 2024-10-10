@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>My Homepage</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="homepage.css"> <!-- Link to external CSS for styling -->
+    <script src="https://kit.fontawesome.com/b7cf124d87.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Sai Vamshi's Personal Homepage</h1> <!-- Main header for the homepage -->
+    </div>
+    <div class="body">
+        <div class="pic-con"> <!-- Container for profile picture and details -->
+            <div class="pic"> <img src="/profile pic.jpeg" alt="profile"> </div> <!-- Profile picture -->
+            <div class="name"> <!-- Container for name and location -->
+                <h3>Sai Vamshi Dasari</h3> <!-- Name -->
+                <h4>CS Graduate</h4> <!-- Title -->
+                <div class="loc"> <!-- Location information -->
+                    <i class="fa-solid fa-location-dot"></i> <!-- Location icon -->
+                    <p>Fairfax, VA, 22030.</p> <!-- Location text -->
+                </div>
+            </div>
+            <div class="description"> <!-- About Me section -->
+                <h3>About Me:</h3>
+                <p>I'm Sai Vamshi Dasari, a passionate individual with a drive for continuous learning and growth. I believe in the power of curiosity and always seek new experiences that push me out of my comfort zone. Whether it’s diving into a challenging problem or collaborating with a diverse team, I thrive in environments that require both creativity and analytical thinking.</p>
+                <br>
+                <h5>(You can hover over the cards to see my details or click the button below to flip all cards at the same time.)</h5> <!-- Instruction for users -->
+            </div>
+            <button id="flipAllBtn">Flip All Cards</button> <!-- Button to flip all cards -->
+            <div class="part2"> <!-- Section for assignment links -->
+                <p>These are the links for my assignment part 2:</p>
+                
+                <a href="http://18.223.166.230" target="_blank">Survey page</a> <!-- Link to survey page -->
+            </div>
+        </div>
+        
+        <div class="flippingcards-con"> <!-- Container for flipping cards -->
+            <div class="card" id="education-card"> <!-- Education card -->
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Education</h2> <!-- Front side heading -->
+                    </div>
+                    <div class="card-back"> <!-- Back side content -->
+                        <div class="graduationDetails"> <!-- Graduation details section -->
+                            <div class="graduation">
+                            <i class="fa-solid fa-circle-dot"></i> <!-- Graduation icon -->
+                            <p>Graduation</p>
+                            </div>
+                            <div class="details"> <!-- Details about graduation -->
+                                <p>CS graduate from</p>
+                                <p>Gokaraju Rangaraju Institute of Engineering and Technology (2019-2023)</p>
+                            </div>
+                        </div>
+                        <div class="graduationDetails"> <!-- Master's degree details -->
+                            <div class="graduation">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Masters</p>
+                            </div>
+                            <div class="details">
+                                <p>CS Masters in</p>
+                                <p>George Mason University (2023-present)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" id="skills-card"> <!-- Skills card -->
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Skills</h2> <!-- Front side heading -->
+                    </div>
+                    <div class="card-back"> <!-- Back side content -->
+                        <div class="graduationDetails"> <!-- Coding skills section -->
+                            <div class="graduation">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Coding Skills</p>
+                            </div>
+                            <div class="details">
+                                <p>HTML, CSS, JavaScript</p>
+                                <p>React, Redux, Tailwind CSS</p>
+                                <p>C, C++, Java, Python</p>
+                            </div>
+                        </div>
+                        <div class="graduationDetails"> <!-- Other skills section -->
+                            <div class="graduation">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <p>Other Skills</p>
+                            </div>
+                            <div class="details">
+                                <p>Good at problem solving</p>
+                                <p>Good at collaborations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" id="hobbies-card"> <!-- Hobbies card -->
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Hobbies</h2> <!-- Front side heading -->
+                    </div>
+                    <div class="card-back"> <!-- Back side content -->
+                        <div class="hobbie">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Reading Books</p> <!-- Hobby 1 -->
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Playing Games</p> <!-- Hobby 2 -->
+                        </div>
+                        <div class="hobbie">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Watching Movies</p> <!-- Hobby 3 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="projects-card"> <!-- Projects card -->
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Projects</h2> <!-- Front side heading -->
+                    </div>
+                    <div class="card-back"> <!-- Back side content -->
+                        <div class="graduationDetails"> <!-- Academic projects section -->
+                            <div class="graduation">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <p>Academic Projects</p>
+                            </div>
+                            <div class="details">
+                                <div class="project">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>Home automation using voice assistance</p> <!-- Project 1 -->
+                                </div>
+                                <div class="project">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>E-commerce website to sell and buy handicrafts in India</p> <!-- Project 2 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graduationDetails"> <!-- Personal projects section -->
+                            <div class="graduation">
+                                <i class="fa-solid fa-circle-dot"></i>
+                                <p>Personal Projects</p>
+                            </div>
+                            <div class="details">
+                                <div class="project">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <p>LinkedIn Clone (front-end)</p> <!-- Project 3 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"> <!-- Footer section -->
+        <div class="social-media"> <!-- Social media links -->
+            <a href="https://instagram.com/saivamshidasari1432" target="_blank" class="social-icon">
+                <i class="fa fa-instagram"></i> <!-- Instagram icon -->
+            </a>
+            <a href="https://www.linkedin.com/in/sai-vamshi-dasari-952bb2249/" target="_blank" class="social-icon">
+                <i class="fa fa-linkedin"></i> <!-- LinkedIn icon -->
+            </a>
+            <a href="https://github.com/SaiVamshiDasari" target="_blank" class="social-icon">
+                <i class="fa fa-github"></i> <!-- GitHub icon -->
+            </a>
+        </div>
+        <div class="contact-info"> <!-- Contact information -->
+            <p>Email: <a href="mailto:your-saivamshidsari1432@gmail.com">saivamshidsari1432@gmail.com</a></p> <!-- Email link -->
+        </div>
+    </footer>
+    <script src="homepage.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

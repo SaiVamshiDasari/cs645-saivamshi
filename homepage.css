@@ -1,0 +1,318 @@
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Set font family for the body */
+    background-color: whitesmoke; /* Light background color */
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+/* Class for body layout */
+.body {
+    display: flex; /* Flexbox layout for body */
+}
+
+/* Header styles */
+.header {
+    display: flex; /* Flexbox layout for header */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    border-bottom: 0.1px solid rgb(193, 192, 192); /* Bottom border for separation */
+    padding: 10px; /* Padding around header */
+    height: 80px; /* Fixed height for header */
+    width: 100%; /* Full width of header */
+    background-color: #2C3E50; /* Dark background color */
+}
+
+/* Header text styles */
+.header > h1 {
+    color: #ECF0F1; /* Text color for header */
+    font-size: 2em; /* Size of the header text */
+}
+
+/* Part 2 styles */
+.part2 {
+    display: flex; /* Flexbox layout for part 2 */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-evenly; /* Even spacing between items */
+}
+
+/* Link styles */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #3498DB; /* Link color */
+}
+
+/* Profile picture container styles */
+.pic-con {
+    display: flex; /* Flexbox layout for profile picture container */
+    height: fit-content; /* Height adjusts to content */
+    align-items: center; /* Center items vertically */
+    flex: 0.3; /* Flex grow/shrink factor */
+    margin-bottom: 20px; /* Margin below container */
+    margin-top: 20px; /* Margin above container */
+    margin-left: 30px; /* Left margin for spacing */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Padding inside the container */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25); /* Shadow effect */
+    backdrop-filter: blur(25px); /* Blur effect on background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Profile picture styles */
+.pic {
+    height: 250px; /* Fixed height for picture */
+    width: 250px; /* Fixed width for picture */
+    padding: 3px; /* Padding around the image */
+    border: 0.5px solid #3498DB; /* Border around the image */
+    border-radius: 50%; /* Circular shape for picture */
+    background-color: white; /* Background color for image container */
+}
+
+/* Name styles */
+.name {
+    display: flex; /* Flexbox layout for name */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    color: grey; /* Default text color for name */
+}
+
+/* Name heading styles */
+.name > h3 {
+    font-size: 24px; /* Size of the name heading */
+    color: #34495E; /* Color for the name */
+}
+
+/* Subtitle styles */
+.name > h4 {
+    font-size: 24px; /* Size of the subtitle */
+    color: #7F8C8D; /* Color for the subtitle */
+}
+
+/* Profile image styles */
+.pic > img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 50%; /* Circular shape for image */
+}
+
+/* Flipping cards container styles */
+.flippingcards-con {
+    display: flex; /* Flexbox layout for cards */
+    flex: 0.7; /* Flex grow/shrink factor */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Button styles for flipping cards */
+#flipAllBtn {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #3498DB; /* Button background color */
+    color: white; /* Text color for button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Margin above button */
+    margin-bottom: 20px; /* Margin below button */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Button hover effect */
+#flipAllBtn:hover {
+    background-color: #2980B9; /* Darker background on hover */
+}
+
+/* Card styles */
+.card {
+    perspective: 1000px; /* Perspective for 3D effect */
+    width: 40%; /* Width of the card */
+    height: 300px; /* Fixed height for card */
+    background-color: transparent; /* Transparent background for card */
+}
+
+/* Inner card styles */
+.card-inner {
+    position: relative; /* Positioning for 3D effect */
+    width: 100%; /* Full width of card */
+    height: 100%; /* Full height of card */
+    transition: transform 0.6s; /* Transition for flipping effect */
+    transform-style: preserve-3d; /* Preserve 3D style */
+}
+
+/* Card front and back styles */
+.card-front, .card-back {
+    position: absolute; /* Absolute positioning for front/back */
+    width: 100%; /* Full width of card */
+    height: 100%; /* Full height of card */
+    backface-visibility: hidden; /* Hide back face when not visible */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Padding inside cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25); /* Shadow effect for cards */
+}
+
+/* Front card styles */
+.card-front {
+    color: white; /* Text color for front */
+}
+
+/* Background colors for specific cards */
+#skills-card .card-front {
+    background-color: #34495E; /* Background for skills card */
+}
+#education-card .card-front {
+    background-color: #8E44AD; /* Background for education card */
+}
+#hobbies-card .card-front {
+    background-color: #16A085; /* Background for hobbies card */
+}
+#projects-card .card-front {
+    background-color: #D35400; /* Background for projects card */
+}
+
+/* Card back styles */
+.card-back {
+    background-color: #ECF0F1; /* Background color for back */
+    color: #34495E; /* Text color for back */
+    transform: rotateY(180deg); /* Rotate back to be hidden */
+}
+
+/* Card hover effect to flip */
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+/* Class for flipped state */
+.flipped .card-inner {
+    transform: rotateY(180deg); /* Flip card */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2C3E50; /* Dark background for footer */
+    color: #ECF0F1; /* Text color in footer */
+    padding: 20px; /* Padding inside footer */
+    text-align: center; /* Center text in footer */
+    position: relative; /* Positioning for layout */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width of footer */
+}
+
+/* Social media link styles */
+.social-media {
+    margin-bottom: 10px; /* Margin below social media links */
+}
+
+.social-icon {
+    color: #ECF0F1; /* Icon color */
+    margin: 0 10px; /* Margin around icons */
+    font-size: 24px; /* Size of icons */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect on hover */
+}
+
+/* Social icon hover effect */
+.social-icon:hover {
+    color: #3498DB; /* Change color on hover */
+}
+
+/* Contact info link styles */
+.contact-info a {
+    color: #3498DB; /* Color for email link */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Contact link hover effect */
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer positioning */
+.footer {
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* Styles for graduation details */
+.graduationDetails {
+    padding: 5px; /* Padding for details */
+    margin-bottom: 5px; /* Margin below details */
+}
+
+/* Card back layout */
+.card-back {
+    display: flex; /* Flexbox layout for back */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to start */
+}
+
+/* Graduation info layout */
+.graduation {
+    display: flex; /* Flexbox layout for graduation info */
+    font-size: 20px; /* Font size for graduation */
+    justify-content: space-evenly; /* Even spacing */
+    width: 200px; /* Fixed width */
+}
+
+/* Details layout */
+.details {
+    margin-left: 15px; /* Margin on left */
+    margin-top: 10px; /* Margin on top */
+}
+
+/* Hobbies layout */
+.hobbie {
+    display: flex; /* Flexbox layout for hobbies */
+    justify-content: space-around; /* Even spacing */
+    padding: 10px; /* Padding for hobbies */
+    margin: 10px; /* Margin around hobbies */
+    font-size: 20px; /* Font size for hobbies */
+    width: 200px; /* Fixed width */
+}
+
+/* Project layout */
+.project {
+    display: flex; /* Flexbox layout for projects */
+    justify-content: space-evenly; /* Even spacing */
+    padding: 5px; /* Padding for projects */
+    margin: 4px; /* Margin around projects */
+}
+
+/* Description layout */
+.discription {
+    display: flex; /* Flexbox layout for description */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items */
+    margin: 10px; /* Margin around description */
+    padding: 5px; /* Padding for description */
+}
+
+/* Paragraph styles within description */
+.discription > p {
+    margin: 5px; /* Margin around paragraphs */
+}
+
+/* Location layout */
+.loc {
+    display: flex; /* Flexbox layout for location */
+    justify-content: space-evenly; /* Even spacing */
+    margin-top: 5px; /* Margin on top */
+    width: 170px; /* Fixed width */
+}

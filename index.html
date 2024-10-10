@@ -1,0 +1,159 @@
+<!-- survey page -->
+<!-- name: sai vamshi dasari -->
+  <!-- g#: G01464718 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>CS Department Survey</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/survey2.css"> <!-- Custom CSS for styling -->
+    <script src="https://kit.fontawesome.com/b7cf124d87.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+    
+    <div class="container mt-5"> <!-- Main container with margin on top -->
+        <div class="heading-box text-center"> <!-- Centered heading box -->
+            <h1 style=" font-weight: 700">Student campus visit Survey</h1> <!-- Main title -->
+        </div>
+        <form autocomplete="on" class="form-con" id="myform"> <!-- Form element -->
+            <div class="conleft"> <!-- Left side of the form -->
+                <div class="personalinfo"> <!-- Personal information section -->
+                    <h3 class="text-gmu-gold"><i class="fa-solid fa-user-tie"></i> Personal info</h3> <!-- Section title with icon -->
+                    <div class="form-group"> <!-- First name input -->
+                        <label for="username" class="required-field text-gmu-green">First name</label> <!-- Label for input -->
+                        <input type="text" id="firstrname" name="name" class="form-control" placeholder="Your username" required autofocus> <!-- First name input field -->
+                    </div>
+                    <div class="form-group"> <!-- Last name input -->
+                        <label for="username" class="required-field text-gmu-green">Last name</label> <!-- Label for input -->
+                        <input type="text" id="lastname" name="name" class="form-control" placeholder="Your username" required autofocus> <!-- Last name input field -->
+                    </div>
+        
+                    <!-- Street Address -->
+                    <div class="form-group"> <!-- Street address input -->
+                        <label for="street" class="required-field text-gmu-green">Street Address</label> <!-- Label for input -->
+                        <input type="text" id="street" name="street" class="form-control" placeholder="123 Main St" required> <!-- Street address input field -->
+                    </div>
+        
+                    <!-- City -->
+                    <div class="form-group"> <!-- City input -->
+                        <label for="city" class="required-field text-gmu-green">City</label> <!-- Label for input -->
+                        <input type="text" id="city" name="city" class="form-control" placeholder="Your city" required> <!-- City input field -->
+                    </div>
+        
+                    <!-- State -->
+                    <div class="form-group"> <!-- State input -->
+                        <label for="state" class="required-field text-gmu-green">State</label> <!-- Label for input -->
+                        <input type="text" id="state" name="state" class="form-control" placeholder="Your state" required> <!-- State input field -->
+                    </div>
+        
+                    <!-- Zip Code -->
+                    <div class="form-group"> <!-- Zip code input -->
+                        <label for="zip" class="required-field text-gmu-green">Zip Code</label> <!-- Label for input -->
+                        <input type="text" id="zip" name="zip" class="form-control" placeholder="12345" required> <!-- Zip code input field -->
+                    </div>
+        
+                </div>
+                <div class="personalinfo"> <!-- Contact information section -->
+                    <h3 class="text-gmu-gold"><i class="fa-solid fa-address-book"></i> Contact info</h3> <!-- Section title with icon -->
+                    <div class="form-group"> <!-- Telephone number input -->
+                        <label for="telephone" class="required-field text-gmu-green">Telephone Number</label> <!-- Label for input -->
+                        <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="(555) 555-5555" required> <!-- Telephone input field -->
+                    </div>
+        
+                    <!-- Email -->
+                    <div class="form-group"> <!-- Email input -->
+                        <label for="email" class="required-field text-gmu-green">Email</label> <!-- Label for input -->
+                        <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required> <!-- Email input field -->
+                    </div>
+                    <div class="form-group"> <!-- Date of survey input -->
+                        <label for="date" class="required-field text-gmu-green">Date of Survey</label> <!-- Label for input -->
+                        <input type="date" id="date" name="date" class="form-control" required> <!-- Date input field -->
+                    </div>
+                </div>
+            </div>
+            <div class="rightcon"> <!-- Right side of the form -->
+                <div class="personalinfo"> <!-- Thoughts section -->
+                    <h3 class="text-gmu-gold"><i class="fa-solid fa-pen-nib"></i> Your thoughts</h3> <!-- Section title with icon -->
+                    <div class="form-group"> <!-- Likes about campus -->
+                        <label class="text-gmu-green">What did you like most about the campus?</label> <!-- Question label -->
+                        <div class="form-check"> <!-- Checkbox for students -->
+                            <input type="checkbox" id="students" name="liked[]" value="students" class="form-check-input" >
+                            <label for="students" class="form-check-label checkbox-label text-gmu-green">Students</label> <!-- Checkbox label -->
+                        </div>
+                        <div class="form-check"> <!-- Checkbox for location -->
+                            <input type="checkbox" id="location" name="liked[]" value="location" class="form-check-input">
+                            <label for="location" class="form-check-label checkbox-label text-gmu-green">Location</label> <!-- Checkbox label -->
+                        </div>
+                        <div class="form-check"> <!-- Checkbox for campus -->
+                            <input type="checkbox" id="campus" name="liked[]" value="campus" class="form-check-input" >
+                            <label for="campus" class="form-check-label checkbox-label text-gmu-green">Campus</label> <!-- Checkbox label -->
+                        </div>
+                        <div class="form-check"> <!-- Checkbox for atmosphere -->
+                            <input type="checkbox" id="atmosphere" name="liked[]" value="atmosphere" class="form-check-input" >
+                            <label for="atmosphere" class="form-check-label checkbox-label text-gmu-green">Atmosphere</label> <!-- Checkbox label -->
+                        </div>
+                        <div class="form-check"> <!-- Checkbox for dorm rooms -->
+                            <input type="checkbox" id="dorm-rooms" name="liked[]" value="dorm-rooms" class="form-check-input" >
+                            <label for="dorm-rooms" class="form-check-label checkbox-label text-gmu-green">Dorm Rooms</label> <!-- Checkbox label -->
+                        </div>
+                        <div class="form-check"> <!-- Checkbox for sports -->
+                            <input type="checkbox" id="sports" name="liked[]" value="sports" class="form-check-input">
+                            <label for="sports" class="form-check-label checkbox-label text-gmu-green">Sports</label> <!-- Checkbox label -->
+                        </div>
+                    </div>
+                    <div class="form-group"> <!-- Interest input -->
+                        <label class="required-field text-gmu-green">How did you become interested in our university?</label> <!-- Question label -->
+                        <div class="custom-control custom-radio"> <!-- Radio button for friends -->
+                            <input type="radio" id="friends" name="interest" value="friends" class="custom-control-input" required>
+                            <label for="friends" class="custom-control-label radio-label text-gmu-green">Friends</label> <!-- Radio label -->
+                        </div>
+                        <div class="custom-control custom-radio"> <!-- Radio button for television -->
+                            <input type="radio" id="television" name="interest" value="television" class="custom-control-input" required>
+                            <label for="television" class="custom-control-label radio-label text-gmu-green">Television</label> <!-- Radio label -->
+                        </div>
+                        <div class="custom-control custom-radio"> <!-- Radio button for internet -->
+                            <input type="radio" id="internet" name="interest" value="internet" class="custom-control-input" required>
+                            <label for="internet" class="custom-control-label radio-label text-gmu-green">Internet</label> <!-- Radio label -->
+                        </div>
+                        <div class="custom-control custom-radio"> <!-- Radio button for other -->
+                            <input type="radio" id="other" name="interest" value="other" class="custom-control-input" required>
+                            <label for="other" class="custom-control-label radio-label text-gmu-green">Other</label> <!-- Radio label -->
+                        </div>
+                    </div>
+                    <div class="form-group"> <!-- Raffle input -->
+                        <label for="raffle" class="required-field text-gmu-green">Enter 10 comma(,) separated numbers(1-100) for the raffle:</label> <!-- Question label -->
+                        <input type="text" id="raffle" name="raffle" class="form-control" placeholder="22,33,44,55,66,77,88,99,34,56"  pattern="^(100|[1-9]?[0-9])(,(100|[1-9]?[0-9])){9}$"  required> <!-- Raffle input field -->
+                    </div>
+                    <div class="form-group"> <!-- Additional comments input -->
+                        <label for="comments" class="text-gmu-green">Additional Comments</label> <!-- Label for input -->
+                        <textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Your comments here..."></textarea> <!-- Textarea for comments -->
+                    </div>
+    
+                    <!-- Likelihood to Recommend -->
+                    <div class="form-group"> <!-- Likelihood to recommend input -->
+                        <label for="recommend" class="required-field text-gmu-green">Likelihood to Recommend</label> <!-- Label for input -->
+                        <select id="recommend" name="recommend" class="form-control" required> <!-- Dropdown for recommendation -->
+                            <option value="" disabled selected>Select one</option> <!-- Default option -->
+                            <option value="very-likely">Very Likely<i class="fa-solid fa-hourglass-start"></i></option> <!-- Option for very likely -->
+                            <option value="likely">Likely</option> <!-- Option for likely -->
+                            <option value="unlikely">Unlikely</option> <!-- Option for unlikely -->
+                        </select>
+                    </div>
+                </div>
+           
+                <!-- Submit Button -->
+                <div class="form-group"> <!-- Button group -->
+                    <button type="submit" class="btn btn-primary">Submit</button> <!-- Submit button -->
+                    <button type="reset" class="btn btn-primary">Cancel</button> <!-- Reset button -->
+                </div>
+            </div>
+           </div>
+        </form>
+    </div>
+    
+   
+    
+</body>
+</html>

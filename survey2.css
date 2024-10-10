@@ -1,0 +1,114 @@
+.text-gmu-green {
+    color: white; /* GMU Green text color */
+}
+
+.xt-gmu-gold {
+    color: #FFCC33; /* GMU Gold text color */
+}
+
+.bg-gmu-gold {
+    background-color: #FFCC33; /* GMU Gold background color */
+}
+
+.form-control {
+    border-color: #006633; /* GMU Green border for form controls */
+}
+
+.form-control:focus {
+    border-color: #FFCC33; /* GMU Gold border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 204, 51, 0.25); /* GMU Gold shadow effect */
+}
+
+.required-field::after {
+    content: '*'; /* Adds an asterisk for required fields */
+    color: red; /* Color of the asterisk */
+    margin-left: 5px; /* Space between the field label and asterisk */
+}
+
+.checkbox-label, .radio-label {
+    cursor: pointer; /* Changes cursor to pointer for clickable labels */
+}
+
+.btn-primary {
+    background-color: #006633; /* GMU Green background for primary buttons */
+    border-color: #006633; /* GMU Green border for primary buttons */
+}
+
+.btn-primary:hover {
+    background-color: #004d00; /* Darker GMU Green for button hover effect */
+    border-color: #004d00; /* Darker GMU Green border for button hover effect */
+}
+
+/* Custom Radio Button Styles */
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #FFCC33; /* GMU Gold for checked radio button background */
+    border-color: #FFCC33; /* GMU Gold border for checked radio button */
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #FFCC33; /* GMU Gold for checked radio button indicator */
+    border-color: #FFCC33; /* GMU Gold border for checked radio button indicator */
+}
+
+.custom-control-label::before {
+    border-color: #006633; /* GMU Green border for custom radio button */
+}
+
+.custom-control-label::after {
+    background-color: #FFFFFF; /* White background for custom radio button indicator */
+    border: 2px solid #006633; /* GMU Green border for custom radio button indicator */
+}
+
+/* Heading Style */
+.heading-box {
+    color: #ffffff; /* White text color for heading box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    padding: 15px; /* Padding inside the heading box */
+    background-color: #0FA3B1; /* Background color for the heading box */
+    margin-bottom: 20px; /* Space below the heading box */
+}
+
+/* Body Background */
+body {
+    background-color: #dfdfa2; /* Light gray background for the body */
+}
+
+/* Custom Style Class */
+.custom-style {
+    border-radius: 8px; /* Rounded corners for custom style */
+    padding: 10px; /* Padding inside the custom style */
+    background-color: #FFCC33; /* GMU Gold background for custom style */
+    color: #006633; /* GMU Green text color for custom style */
+}
+
+.form-group {
+    margin: 10px; /* Margin around each form group */
+}
+
+.form-con {
+    display: flex; /* Flexbox layout for form container */
+    justify-content: center; /* Center content horizontally */
+    gap: 40px; /* Space between flex items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.conleft {
+    display: flex; /* Flexbox layout for left side */
+    flex-direction: column; /* Stack items vertically */
+    flex: 0.5; /* Takes up half of the available space */
+    width: 50%; /* Width set to 50% */
+}
+
+.rightcon {
+    display: flex; /* Flexbox layout for right side */
+    flex-direction: column; /* Stack items vertically */
+    flex: 0.5; /* Takes up half of the available space */
+}
+
+.personalinfo {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow effect for personal info box */
+    margin: 10px; /* Margin around the personal info box */
+    padding: 10px; /* Padding inside the personal info box */
+    background-color: #3E6990; /* Background color for personal info box */
+    border-radius: 10px; /* Rounded corners for personal info box */
+}
